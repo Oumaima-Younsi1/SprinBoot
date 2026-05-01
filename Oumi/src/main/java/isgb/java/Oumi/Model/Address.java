@@ -23,5 +23,8 @@ public class Address {
     private String city;
     @Column(name="PostalCode")
     private String postalCode;
+
+    @OneToOne
+    private Student student;
 }
 

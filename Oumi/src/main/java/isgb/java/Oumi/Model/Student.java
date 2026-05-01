@@ -26,7 +26,7 @@ public class Student {
     private Date birthDate;
 
     @OneToOne
-    private Adress address;
+    private Address address;
 
     @ManyToOne
     @JoinColumn(name = "school_id")
