@@ -1,6 +1,6 @@
 package isgb.java.Oumi.Repository;
 
-import isgb.java.Oumi.Model.Adress;
+import isgb.java.Oumi.Model.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
@@ -10,11 +10,11 @@ import java.util.List;
  * Réalisé par : Membre 2
  */
 @Repository
-public interface AdressRepository extends JpaRepository<Adress, Integer> {
+public interface AddressRepository extends JpaRepository<Address, Integer> {
 
     // Trouver les adresses par ville
-    List<Adress> findByCity(String city);
+    List<Address> findByCity(String city);
 
     // Trouver les adresses par code postal
-    List<Adress> findByPostalCode(String postalCode);
+    List<Address> findByPostalCode(String postalCode);
 }
