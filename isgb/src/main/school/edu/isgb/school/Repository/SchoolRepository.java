@@ -1,6 +1,6 @@
 package edu.isgb.school.Repository;
 
-import edu.isgb.school.Model.School;
+import edu.isgb.school.entities.School;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

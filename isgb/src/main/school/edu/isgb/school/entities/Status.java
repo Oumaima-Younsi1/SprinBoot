@@ -1,4 +1,4 @@
-package edu.isgb.school.Model;
+package edu.isgb.school.entities;
 
 public enum Status {
     TODO,

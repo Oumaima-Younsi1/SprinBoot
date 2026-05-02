@@ -1,6 +1,6 @@
 package edu.isgb.school.SchoolService;
 
-import edu.isgb.school.Model.Instructor;
+import edu.isgb.school.entities.Instructor;
 import edu.isgb.school.Repository.InstructorRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;

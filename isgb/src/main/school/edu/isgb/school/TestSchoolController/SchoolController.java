@@ -1,6 +1,6 @@
 package edu.isgb.school.TestSchoolController;
 
-import edu.isgb.school.Model.School;
+import edu.isgb.school.entities.School;
 import edu.isgb.school.Repository.SchoolRepository;
 import org.springframework.web.bind.annotation.*;
 

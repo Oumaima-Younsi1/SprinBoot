@@ -1,6 +1,6 @@
 package edu.isgb.school.Repository;
 
-import edu.isgb.school.Model.Address;
+import edu.isgb.school.entities.Address;
 import org.springframework.data.jpa.repository.JpaRepository; //Elle fournit automatiquement les opérations CRUD
 import org.springframework.stereotype.Repository;
 import java.util.List;

@@ -1,7 +1,7 @@
 package edu.isgb.school.SchoolService;
 
-import edu.isgb.school.Model.Departement;
-import edu.isgb.school.Model.School;
+import edu.isgb.school.entities.Departement;
+import edu.isgb.school.entities.School;
 import edu.isgb.school.Repository.DepartmentRepository;
 import edu.isgb.school.Repository.SchoolRepository;
 import jakarta.transaction.Transactional;

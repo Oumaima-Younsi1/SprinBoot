@@ -1,7 +1,7 @@
 package edu.isgb.school.SchoolService;
 
-import edu.isgb.school.Model.Course;
-import edu.isgb.school.Model.Instructor;
+import edu.isgb.school.entities.Course;
+import edu.isgb.school.entities.Instructor;
 import edu.isgb.school.Repository.CourseRepository;
 import edu.isgb.school.Repository.InstructorRepository;
 import jakarta.transaction.Transactional;

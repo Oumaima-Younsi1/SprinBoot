@@ -1,6 +1,6 @@
 package edu.isgb.school.TestSchoolController;
 
-import edu.isgb.school.Model.Address;
+import edu.isgb.school.entities.Address;
 import edu.isgb.school.Repository.AddressRepository;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,11 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/address")
-public class AdressController {
+public class AddressController {
 
     private final AddressRepository addressRepository;
 
-    public AdressController(AddressRepository addressRepository) {
+    public AddressController(AddressRepository addressRepository) {
         this.addressRepository = addressRepository;
     }
 
