@@ -1,4 +1,4 @@
-package edu.isgb.school.Controller;
+package edu.isgb.school.TestSchoolController;
 
 import edu.isgb.school.Model.Student;
 import edu.isgb.school.Repository.StudentRepository;

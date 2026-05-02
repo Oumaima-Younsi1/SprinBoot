@@ -1,4 +1,4 @@
-package edu.isgb.school.Service;
+package edu.isgb.school.SchoolService;
 
 import edu.isgb.school.Model.Address;
 import edu.isgb.school.Repository.AddressRepository;

@@ -1,20 +1,15 @@
 package edu.isgb.school.Repository;
 
 import edu.isgb.school.Model.Address;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaRepository; //Elle fournit automatiquement les opérations CRUD
 import org.springframework.stereotype.Repository;
 import java.util.List;
 
-/**
- * Repository pour l'entité Address.
- * Réalisé par : Membre 2
- */
-@Repository
-public interface AddressRepository extends JpaRepository<Address, Integer> {
+@Repository //Indique que cette interface gère la base de données
 
-    // Trouver les adresses par ville
+public interface AddressRepository extends JpaRepository<Address, Integer>
+{
+
     List<Address> findByCity(String city);
-
-    // Trouver les adresses par code postal
     List<Address> findByPostalCode(String postalCode);
 }

@@ -1,7 +1,7 @@
-package edu.isgb.school.Controller;
+package edu.isgb.school.TestSchoolController;
 
 import edu.isgb.school.Model.Departement;
-import edu.isgb.school.Repository.DepartementRepository;
+import edu.isgb.school.Repository.DepartmentRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.List;
 @RequestMapping("/api/departments")
 public class DepartementController {
 
-    private final DepartementRepository departementRepository;
+    private final DepartmentRepository departementRepository;
 
-    public DepartementController(DepartementRepository departementRepository) {
+    public DepartementController(DepartmentRepository departementRepository) {
         this.departementRepository = departementRepository;
     }
 

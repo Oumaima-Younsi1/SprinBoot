@@ -1,9 +1,9 @@
-package edu.isgb.school.Service;
+package edu.isgb.school.SchoolService;
 
+import edu.isgb.school.Model.Departement;
 import edu.isgb.school.Model.School;
-import edu.isgb.school.Model.Student;
+import edu.isgb.school.Repository.DepartmentRepository;
 import edu.isgb.school.Repository.SchoolRepository;
-import edu.isgb.school.Repository.StudentRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -13,20 +13,20 @@ import java.util.List;
 @Service
 @Transactional
 @AllArgsConstructor
-public class StudentService {
+public class DepartementService {
 
-    private StudentRepository studentRepository;
+    private DepartmentRepository departementRepository;
     private SchoolRepository schoolRepository;
 
-    public Student createStudent(Student student, int schoolId) {
+    public Departement createDepartement(Departement d, int schoolId) {
         School school = schoolRepository.findById(schoolId)
                 .orElseThrow(() -> new RuntimeException("School non trouvée"));
 
-        student.setSchool(school);
-        return studentRepository.save(student);
+        d.setSchool(school);
+        return departementRepository.save(d);
     }
 
-    public List<Student> findAll() {
-        return studentRepository.findAll();
+    public List<Departement> findAll() {
+        return departementRepository.findAll();
     }
 }
